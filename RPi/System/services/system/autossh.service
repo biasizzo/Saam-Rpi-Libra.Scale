@@ -1,0 +1,16 @@
+[Unit]
+Description=AutoSSH tunnel
+Wants=network-online.target
+After=network-online.target auditd.service
+ConditionPathExists=!/etc/ssh/sshd_not_to_be_run
+
+[Service]
+EnvironmentFile=-/etc/default/autossh
+ExecStart=/usr/bin/sudo -E -u $RPi_user /usr/local/sbin/SAAM.reverse.ssh.sh
+KillMode=mixed
+Restart=always
+RestartSec=60
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

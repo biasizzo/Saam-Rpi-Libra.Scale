@@ -1,0 +1,15 @@
+[Unit]
+Description=SAAM configuration
+Wants=network-online.target
+After=network-online.target auditd.service
+Before=SAAM.sensor.service SAAM-BLE.service SAAM.render.service SAAM.moodbox.service
+
+[Service]
+ExecStart=/usr/bin/sudo -u saam /home/saam/SAAM/configure.sh
+StandardOutput=null
+StandardError=null
+RemainAfterExit=yes
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:weightSum="1"
+    tools:context=".MealContents">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meal_contents_text_1"
+            android:textSize="39sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensansregular"
+            android:textColor="@color/fontColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meal_contents_text_2"
+            android:textSize="17sp"
+            android:fontFamily="@font/opensanssemibold"
+            android:textColor="@color/fontColor"
+            android:gravity="center"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:id="@+id/llContents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <com.ijs.saam.CustomSelectElement
+                    android:id="@+id/cseDairy"
+                    android:layout_width="124dp"
+                    android:layout_height="113dp"
+                    app:name="dairy"
+                    app:customText="@string/mlecni_izdelek"
+                    app:customImage="@drawable/ic_dairy" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="0dp"/>
+
+                <com.ijs.saam.CustomSelectElement
+                    android:id="@+id/cseEggs"
+                    android:layout_width="124dp"
+                    android:layout_height="113dp"
+                    app:name="eggs"
+                    app:customText="@string/txt_eggs"
+                    app:customImage="@drawable/ic_egg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <com.ijs.saam.CustomSelectElement
+                    android:id="@+id/cseMeat"
+                    android:layout_width="124dp"
+                    android:layout_height="113dp"
+                    app:name="meat"
+                    app:customText="@string/meso"
+                    app:customImage="@drawable/ic_meat" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="0dp"/>
+
+                <com.ijs.saam.CustomSelectElement
+                    android:id="@+id/cseFish"
+                    android:layout_width="124dp"
+                    android:layout_height="113dp"
+                    app:name="fish"
+                    app:customText="@string/ribe"
+                    app:customImage="@drawable/ic_fish" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <com.ijs.saam.CustomSelectElement
+                    android:id="@+id/cseBeans"
+                    android:layout_width="124dp"
+                    android:layout_height="113dp"
+                    app:name="beans"
+                    app:customText="@string/strocnice"
+                    app:customImage="@drawable/ic_beans" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="0dp"/>
+
+                <com.ijs.saam.CustomSelectElement
+                    android:id="@+id/cseNone"
+                    android:layout_width="124dp"
+                    android:layout_height="113dp"
+                    app:name="none"
+                    app:customText="@string/ne_vsebuje"
+                    app:customImage="@drawable/ic_none" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="0.2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:contentDescription="@string/back_button"
+            android:padding="10dp"
+            android:onClick="onBackClick"/>
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/opensansregular"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="39sp"
+            android:onClick="onConfirm"
+            android:enabled="false"
+            android:text="@string/btn_potrdi"/>
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="0dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_info"
+            android:padding="10dp"
+            android:contentDescription="@string/info_button"
+            android:onClick="onInfoClick"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

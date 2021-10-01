@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SAAM</string>
+    <string name="saam_logo">SAAM logo</string>
+    <string name="obrok">the meal</string>
+    <string name="stehtajte">Weigh</string>
+    <string name="weighttext">0 g</string>
+    <string name="tare">Tare</string>
+    <string name="tare_icon">tare icon</string>
+    <string name="btn_potrdi">Confirm</string>
+    <string name="pass_dialog_hint">Password</string>
+    <string name="pass_dialog_text">Enter scale password</string>
+    <string name="pass_dialog_btn_back">Back</string>
+    <string name="pass_dialog_btn_confirm">Confirm</string>
+    <string name="weight_battery_nan">NaN</string>
+    <string name="btn_take_photo">Take photo</string>
+    <string name="slikajte">Take photo of</string>
+    <string name="back_button">back button</string>
+    <string name="info_button">info button</string>
+    <string name="captured_image_preview">captured image preview</string>
+    <string name="photo_confirm_text">Confirm</string>
+    <string name="meal_contents_text_1">Select</string>
+    <string name="txt_dairy">Mlečne\nizdelke</string>
+    <string name="description_dairy">Dairy</string>
+    <string name="txt_eggs">Eggs</string>
+    <string name="description_txt">Choosable image</string>
+    <string name="info_text1">Vklopite</string>
+    <string name="info_text2">tehtnico</string>
+    <string name="info1">1.)</string>
+    <string name="info11">Lorem ipsum dolor sit\namet, consect etur</string>
+    <string name="end1">Enjoy your meal</string>
+    <string name="scale_select_text_1">Connecting</string>
+    <string name="settings_text_1">Settings</string>
+    <string name="settings_text_2">User ID</string>
+    <string name="settings_text_4">Disconnect the scale</string>
+    <string name="meal_contents_text_2">a protein source of the meal:</string>
+    <string name="mlecni_izdelek">Dairy\nproducts</string>
+    <string name="meso">Meat</string>
+    <string name="ribe">Fish</string>
+    <string name="strocnice">Legumes</string>
+    <string name="ne_vsebuje">Does not\ncontain</string>
+</resources>

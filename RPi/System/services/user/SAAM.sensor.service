@@ -1,0 +1,15 @@
+[Unit]
+Description=SAAM data acquisition
+Wants=network-online.target SAAM.Configure.service
+After=network-online.target auditd.service SAAM.Configure.service
+PartOf=SAAM.Configure.service
+
+[Service]
+ExecStart=/usr/bin/sudo -u saam /home/saam/SAAM/sensor/acquisition.sh
+KillMode=control-group
+Restart=always
+RestartSec=60
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

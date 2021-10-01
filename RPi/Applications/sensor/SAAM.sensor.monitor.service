@@ -1,0 +1,14 @@
+[Unit]
+Description=SAAM ambient sensor memory monitor
+Wants=SAAM.sensor.service
+After=SAAM.sensor.service
+
+[Service]
+ExecStart=/home/saam/SAAM/sensor/monitor.sh
+KillMode=control-group
+Restart=always
+RestartSec=60
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

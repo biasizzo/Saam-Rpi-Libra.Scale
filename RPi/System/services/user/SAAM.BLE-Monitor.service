@@ -1,0 +1,18 @@
+[Unit]
+Description=SAAM BLE monitor and restart via USB hub
+Wants=network-online.target SAAM-BLE.service
+After=network-online.target auditd.service SAAM-BLE.service
+PartOf=SAAM.Configure.service SAAM-BLE.service
+ConditionPathExists=/home/saam/SAAM/saam-ble/config.json
+
+[Service]
+ExecStart=/usr/bin/sudo -u saam /home/saam/SAAM/saam-ble/BLE.watchdog.py
+StandardOutput=null
+StandardError=null
+KillMode=control-group
+Restart=always
+RestartSec=5
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

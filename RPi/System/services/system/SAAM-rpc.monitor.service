@@ -1,0 +1,14 @@
+[Unit]
+Description=SAAM ambient sensor rpc monitor
+Wants=network-online.target
+After=network-online.target auditd.service
+
+[Service]
+ExecStart=/usr/bin/sudo -u saam /home/saam/SAAM/monitor/rpc.monitor.py
+KillMode=control-group
+Restart=always
+RestartSec=60
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

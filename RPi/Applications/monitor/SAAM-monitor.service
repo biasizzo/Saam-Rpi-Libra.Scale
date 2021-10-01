@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+
+<service-group>
+  <name>saam-amb</name>
+  <service protocol="ipv4">
+    <type>_remote._tcp</type>
+    <port>4242</port>
+  </service>
+</service-group>

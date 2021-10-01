@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".WeightActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stehtajte"
+            android:textSize="39sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensansregular"
+            android:textColor="@color/fontColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/obrok"
+            android:textSize="17sp"
+            android:fontFamily="@font/opensanssemibold"
+            android:textColor="@color/fontColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/weighttext"
+            android:textSize="83sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/opensanslight"
+            android:textColor="@color/fontColor"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBattery"
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/battery"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tvBattery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansregular"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/fontColor"
+                android:textSize="15sp"
+                android:text="@string/weight_battery_nan" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:onClick="tareClicked"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_weight_tare"
+                android:contentDescription="@string/tare_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tare"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:fontFamily="@font/opensanssemibold"
+                android:textColor="@color/fontColor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="0.2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:onClick="backClicked"
+            android:contentDescription="@string/back_button"
+            android:padding="10dp"/>
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/opensansregular"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="39sp"
+            android:text="@string/btn_potrdi"
+            android:onClick="confirmClick" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="0dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_info"
+            android:padding="10dp"
+            android:contentDescription="@string/info_button"
+            android:onClick="onInfoClick"/>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

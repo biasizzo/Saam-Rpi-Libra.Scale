@@ -1,0 +1,1192 @@
+{
+    "devices": {
+        "AT01": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8a:81",
+                "location": "sens_bed",
+                "comment": "BED_8A81"
+            }
+        ],
+        "AT02": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8d:b9",
+                "location": "sens_bed",
+                "comment": "BED_8DB9"
+            }
+        ],
+        "AT03": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:7f:e3",
+                "location": "sens_bed",
+                "comment": "BED_7FE3"
+            }
+        ],
+        "AT04": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:9a:c4",
+                "location": "sens_bed",
+                "comment": "BED_9AC4"
+            }
+        ],
+        "AT05": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a1:d0",
+                "location": "sens_bed",
+                "comment": "BED_A1D0"
+            }
+        ],
+        "AT06": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8c:5f",
+                "location": "sens_bed",
+                "comment": "BED_8C5F"
+            }
+        ],
+        "AT07": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a9:83",
+                "location": "sens_bed",
+                "comment": "BED_8DC0"
+            }
+        ],
+        "AT08": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:83:d7",
+                "location": "sens_bed",
+                "comment": "BED_83D7"
+            }
+        ],
+        "AT09": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:93:8c",
+                "location": "sens_bed",
+                "comment": "BED_8AD2"
+            }
+        ],
+        "AT10": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:81:e1",
+                "location": "sens_bed",
+                "comment": "BED_81E1"
+            }
+        ],
+        "AT11": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8a:81",
+                "location": "sens_bed",
+                "comment": "BED_8A81"
+            }
+        ],
+        "BG02": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "a4:34:f1:a5:50:e3",      
+                "mac_old": "e0:7d:ea:ef:96:48",
+                "location": "sens_bed",
+                "comment": "BED_XXXX"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:89:12",
+                "location": "sens_belt",
+                "comment": "CLIP_8912"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:bd:00",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_BD00"
+            }
+        ],
+        "BG03": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:89:71",
+                "location": "sens_bed",
+                "comment": "BED_8971"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:8c:4f",
+                "location": "sens_belt",
+                "comment": "CLIP_8C4F"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:cf:de",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_CFDE"
+            }
+        ],
+        "BG04": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:92:0e",
+                "location": "sens_bed",
+                "comment": "BED_920E"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:8f:64",
+                "location": "sens_belt",
+                "comment": "CLIP_8F64"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d2:7f",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D27F"
+            }
+        ],
+        "BG05": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8c:47",
+                "location": "sens_bed",
+                "comment": "BED_8C47"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:83:f2",
+                "location": "sens_belt",
+                "comment": "CLIP_83F2"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:e2:e9",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_E2E9"
+            }
+        ],
+        "BG06": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8d:a2",
+                "location": "sens_bed",
+                "comment": "BED_8DA2"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:7c:36",
+                "location": "sens_belt",
+                "comment": "CLIP_7C36"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:41",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D041"
+            }
+        ],
+        "BG07": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:90:af",
+                "location": "sens_bed",
+                "comment": "BED_90AF"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:9a:bd",
+                "location": "sens_belt",
+                "comment": "CLIP_9ABD"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:cf:e6",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_CFE6"
+            }
+        ],
+        "BG08": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:9e:5d",
+                "location": "sens_bed",
+                "comment": "BED_9E5D"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:a7:83",
+                "location": "sens_belt",
+                "comment": "CLIP_A783"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:eb:68",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_EB68"
+            }
+        ],
+        "BG09": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:97:4c",
+                "location": "sens_bed",
+                "comment": "BED_974C"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:9a:d7",
+                "location": "sens_belt",
+                "comment": "CLIP_9AD7"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:b5:fe",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_B5FE"
+            }
+        ],
+        "BG10": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:9e:0e",
+                "location": "sens_bed",
+                "comment": "BED_9E0E"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:85:a1",
+                "location": "sens_belt",
+                "comment": "CLIP_85A1"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:c4",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D0C4"
+            }
+        ],
+        "BG11": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:9a:c6",
+                "location": "sens_bed",
+                "comment": "BED_9AC6"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:9f:ef",
+                "location": "sens_belt",
+                "comment": "CLIP_9FEF"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:ce:e9",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_CEE9"
+            }
+        ],
+        "BG12": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:89:4c",
+                "location": "sens_bed",
+                "comment": "BED_894C"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:95:06",
+                "location": "sens_belt",
+                "comment": "CLIP_9506"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c2:6f",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C26F"
+            }
+        ],
+        "BG13": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8a:be",
+                "location": "sens_bed",
+                "comment": "BED_8ABE"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:9e:77",
+                "location": "sens_belt",
+                "comment": "CLIP_9E77"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c6:08",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C608"
+            }
+        ],
+        "BG14": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a7:96",
+                "location": "sens_bed",
+                "comment": "BED_A796"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:96:4c",
+                "location": "sens_belt",
+                "comment": "CLIP_964C"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c2:76",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C276"
+            }
+        ],
+        "BG15": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:83:cb",
+                "location": "sens_bed",
+                "comment": "BED_83CB"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:81:fe",
+                "location": "sens_belt",
+                "comment": "CLIP_81FE"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:e3:74",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_E374"
+            }
+        ],
+        "BG16": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:89:67",
+                "location": "sens_bed",
+                "comment": "BED_8967"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:8a:90",
+                "location": "sens_belt",
+                "comment": "CLIP_8A90"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:cf:d3",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_CFD3"
+            }
+        ],
+        "BG17": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:90:d9",
+                "location": "sens_bed",
+                "comment": "BED_90D9"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:7f:83",
+                "location": "sens_belt",
+                "comment": "CLIP_7F83"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:e8:7e",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_E87E"
+            }
+        ],
+        "BG18": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:97:37",
+                "location": "sens_bed",
+                "comment": "BED_9737"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:83:a0",
+                "location": "sens_belt",
+                "comment": "CLIP_83A0"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:5c",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D05C"
+            }
+        ],
+        "BG19": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:9c:e9",
+                "location": "sens_bed",
+                "comment": "BED_9CE9"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:8d:d9",
+                "location": "sens_belt",
+                "comment": "CLIP_8DD9"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c2:b7",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C2B7"
+            }
+        ],
+        "BG20": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:7b:53",
+                "location": "sens_bed",
+                "comment": "BED_7B53"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:92:40",
+                "location": "sens_belt",
+                "comment": "CLIP_9240"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c1:4c",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C14C"
+            }
+        ],
+        "BG21": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8f:24",
+                "location": "sens_bed",
+                "comment": "BED_8F24"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:9c:fd",
+                "location": "sens_belt",
+                "comment": "CLIP_9CFD"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:ce:b1",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_CEB1"
+            }
+        ],
+        "BG22": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a3:ce",
+                "location": "sens_bed",
+                "comment": "BED_A3CE"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:93:ac",
+                "location": "sens_belt",
+                "comment": "CLIP_93AC"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d1:10",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D110"
+            }
+        ],
+        "BG23": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:85:80",
+                "location": "sens_bed",
+                "comment": "BED_8580"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:7f:c5",
+                "location": "sens_belt",
+                "comment": "CLIP_7FC5"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:b7:1d",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_B71D"
+            }
+        ],
+        "BG24": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a1:aa",
+                "location": "sens_bed",
+                "comment": "BED_A1AA"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:92:6e",
+                "location": "sens_belt",
+                "comment": "CLIP_926E"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:de",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D0DE"
+            }
+        ],
+        "BG25": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:83:89",
+                "location": "sens_bed",
+                "comment": "BED_8389"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:9e:5a",
+                "location": "sens_belt",
+                "comment": "CLIP_9E5A"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:cb:7c",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_CB7C"
+            }
+        ],
+        "BG26": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:7e:6e",
+                "location": "sens_bed",
+                "comment": "BED_7E6E"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:a3:ea",
+                "location": "sens_belt",
+                "comment": "CLIP_A3EA"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:e3:4b",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_E34B"
+            }
+        ],
+        "BG27": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8c:40",
+                "location": "sens_bed",
+                "comment": "BED_8C40"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:95:51",
+                "location": "sens_belt",
+                "comment": "CLIP_9551"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:08",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D008"
+            }
+        ],
+        "BG28": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:85:af",
+                "location": "sens_bed",
+                "comment": "BED_85AF"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:90:84",
+                "location": "sens_belt",
+                "comment": "CLIP_9084"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d1:2b",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D12B"
+            }
+        ],
+        "BG29": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:9c:90",
+                "location": "sens_bed",
+                "comment": "BED_9C90"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:98:80",
+                "location": "sens_belt",
+                "comment": "CLIP_9880"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:b7:0a",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_B70A"
+            }
+        ],
+        "BG30": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a7:d4",
+                "location": "sens_bed",
+                "comment": "BED_A7D4"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:a1:96",
+                "location": "sens_belt",
+                "comment": "CLIP_A196"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:b5:0c",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_B50C"
+            }
+        ],
+        "BG31": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:90:9a",
+                "location": "sens_bed",
+                "comment": "BED_909A"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:81:a9",
+                "location": "sens_belt",
+                "comment": "CLIP_81A9"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:ce:ff",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_CEFF"
+            }
+        ],
+        "BG32": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a7:a7",
+                "location": "sens_bed",
+                "comment": "BED_A7A7"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:8c:3c",
+                "location": "sens_belt",
+                "comment": "CLIP_8C3C"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c2:4d",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C24D"
+            }
+        ],
+        "BG33": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a7:96",
+                "location": "sens_bed",
+                "comment": "BED_A796"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:96:4c",
+                "location": "sens_belt",
+                "comment": "CLIP_964C"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c2:76",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C276"
+            }
+        ],
+        "BG34": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:90:d9",
+                "location": "sens_bed",
+                "comment": "BED_90D9"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:7f:83",
+                "location": "sens_belt",
+                "comment": "CLIP_7F83"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:e8:7e",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_E87E"
+            }
+        ],
+        "BG35": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:89:4c",
+                "location": "sens_bed",
+                "comment": "BED_894C"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:95:06",
+                "location": "sens_belt",
+                "comment": "CLIP_9506"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c2:6f",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C26F"
+            }
+        ],
+        "BG36": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:85:80",
+                "location": "sens_bed",
+                "comment": "BED_8580"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:7f:c5",
+                "location": "sens_belt",
+                "comment": "CLIP_7FC5"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:b7:1d",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_B71D"
+            }
+        ],
+        "BG37": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:9c:e9",
+                "location": "sens_bed",
+                "comment": "BED_9CE9"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:8d:d9",
+                "location": "sens_belt",
+                "comment": "CLIP_8DD9"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c2:b7",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C2B7"
+            }
+        ],
+        "BG38": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:7b:53",
+                "location": "sens_bed",
+                "comment": "BED_7B53"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:92:40",
+                "location": "sens_belt",
+                "comment": "CLIP_9240"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c1:4c",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C14C"
+            }
+        ],
+        "BG39": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a7:a7",
+                "location": "sens_bed",
+                "comment": "BED_A7A7"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:8c:3c",
+                "location": "sens_belt",
+                "comment": "CLIP_8C3C"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c2:4d",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C24D"
+            }
+        ],
+        "BG40": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:85:af",
+                "location": "sens_bed",
+                "comment": "BED_85AF"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:83:a0",
+                "location": "sens_belt",
+                "comment": "CLIP_83A0"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d1:2b",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D12B"
+            }
+        ],
+        "BG50": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8a:be",
+                "location": "sens_bed",
+                "comment": "BED_8ABE"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:9e:77",
+                "location": "sens_belt",
+                "comment": "CLIP_9E77"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:c6:08",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_C608"
+            }
+        ],
+        "BG51": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:85:80",
+                "location": "sens_bed",
+                "comment": "BED_8580"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:7f:c5",
+                "location": "sens_belt",
+                "comment": "CLIP_7FC5"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:b7:1d",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_B71D"
+            }
+        ],
+        "BG52": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:8c:40",
+                "location": "sens_bed",
+                "comment": "BED_8C40"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:95:51",
+                "location": "sens_belt",
+                "comment": "CLIP_9551"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:08",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D008"
+            }
+        ],
+        "SI01": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:85:b6",
+                "location": "sens_bed",
+                "comment": "BED_85B6"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:a1:a0",
+                "location": "sens_belt",
+                "comment": "CLIP_A1A0"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:bd:00",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_BD00"
+            }
+        ],
+        "SI02": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:93:8c",
+                "location": "sens_bed",
+                "comment": "BED_938C"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:81:8a",
+                "location": "sens_belt",
+                "comment": "CLIP_818A"
+            }
+        ],
+        "SI03": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a9:83",
+                "location": "sens_bed",
+                "comment": "BED_A983"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:a5:e1",
+                "location": "sens_belt",
+                "comment": "CLIP_A5E1"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:d3",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D0D3"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:55",
+                "location": "sens_bracelet_right",
+                "comment": "SAAM_WRIST_D055"
+            }
+        ],
+        "SI04": [
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:87:3d",
+                "location": "sens_belt",
+                "comment": "CLIP_873D"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:cf:5a",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_CF5A"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d1:9c",
+                "location": "sens_bracelet_right",
+                "comment": "SAAM_WRIST_D19C"
+            }
+        ],
+        "SI51": [
+            {
+                "type": "microhub",
+                "hubType": "BED",
+                "mac": "e0:7d:ea:ef:a9:83",
+                "location": "sens_bed",
+                "comment": "BED_A983"
+            },
+            {
+                "type": "microhub",
+                "hubType": "CLIP",
+                "mac": "e0:7d:ea:ef:a5:e1",
+                "location": "sens_belt",
+                "comment": "CLIP_A5E1"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:d3",
+                "location": "sens_bracelet_left",
+                "comment": "SAAM_WRIST_D0D3"
+            },
+            {
+                "type": "microhub",
+                "hubType": "WRIST",
+                "mac": "9c:a5:25:12:d0:55",
+                "location": "sens_bracelet_right",
+                "comment": "SAAM_WRIST_D055"
+            }
+        ]
+    }
+}

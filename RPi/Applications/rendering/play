@@ -1,0 +1,13 @@
+#!/bin/bash
+
+redirect=0
+if [ "$1" == "-q" ]; then
+  redirect=1
+  shift
+fi
+
+if [ $redirect -gt 0 ]; then
+  omxplayer --no-keys -o local "$1" >/dev/null 2>&1
+else
+  omxplayer --no-keys -o local "$1"
+fi

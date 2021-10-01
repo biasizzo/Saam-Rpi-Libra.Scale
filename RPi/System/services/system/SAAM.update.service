@@ -1,0 +1,13 @@
+[Unit]
+Description=SAAM update at boot-up
+Wants=network-online.target
+After=network-online.target
+# Before=SAAM.sensor.service
+
+[Service]
+ExecStart=/usr/local/sbin/SAAM.update.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

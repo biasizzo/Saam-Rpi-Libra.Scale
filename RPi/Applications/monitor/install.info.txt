@@ -1,0 +1,7 @@
+Verify scrip locations!!!
+
+copy SAAM-monitor.service to /etc/avahi/services
+restart avahi service (check)
+
+copy SAAM-rpc.monitor.service to /lib/systemd/system/
+start and enable service SAAM-rpc.monitor.service

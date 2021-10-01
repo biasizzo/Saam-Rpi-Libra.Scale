@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_text_1"
+        android:textSize="39sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/opensansregular"
+        android:textColor="@color/fontColor"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensanssemibold"
+            android:text="@string/settings_text_2"
+            android:textColor="@color/fontColor"
+            android:layout_marginBottom="5dp"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:maxLength="20"
+            android:background="@drawable/custom_plain_text_field"
+            android:textColor="@color/fontColor"
+            android:fontFamily="@font/opensanssemibold"
+            android:textSize="17sp"
+            android:inputType="text|textNoSuggestions"
+            android:text=""
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_empty"
+            android:textAllCaps="false"
+            android:textColor="@color/fontColor"
+            android:fontFamily="@font/opensanssemibold"
+            android:textSize="17sp"
+            android:text="@string/btn_potrdi"
+            android:onClick="onButtonConfirm"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button_empty"
+        android:textAllCaps="false"
+        android:textColor="@color/fontColor"
+        android:fontFamily="@font/opensanssemibold"
+        android:textSize="17sp"
+        android:text="@string/settings_text_4"
+        android:onClick="onForgetScalePressed"/>
+
+
+</LinearLayout>

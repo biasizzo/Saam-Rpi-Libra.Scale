@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="10" android:drawable="@drawable/ic_batt_10" />
+    <item android:maxLevel="20" android:drawable="@drawable/ic_batt_20" />
+    <item android:maxLevel="30" android:drawable="@drawable/ic_batt_30" />
+    <item android:maxLevel="40" android:drawable="@drawable/ic_batt_40" />
+    <item android:maxLevel="50" android:drawable="@drawable/ic_batt_50" />
+    <item android:maxLevel="60" android:drawable="@drawable/ic_batt_60" />
+    <item android:maxLevel="70" android:drawable="@drawable/ic_batt_70" />
+    <item android:maxLevel="80" android:drawable="@drawable/ic_batt_80" />
+    <item android:maxLevel="90" android:drawable="@drawable/ic_batt_90" />
+    <item android:maxLevel="100" android:drawable="@drawable/ic_batt_100" />
+    <item android:minLevel="999" android:maxLevel="1001" android:drawable="@drawable/ic_batt_unknown" />
+</level-list>
