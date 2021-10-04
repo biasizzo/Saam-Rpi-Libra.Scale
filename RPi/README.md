@@ -34,6 +34,6 @@ Developed within EU Horizon 2020 project SAAM.
     On boot the system and applicationss are configured.
 
   - After boot the system has to be configured:
-     - SSH public key of the RPi local user must be transfered to SSH server
-     - MQTT authentication must be set-up (username, password, certificates)
+     - SSH public key of the RPi local user must be transfered to the SSH server for remote SSH access
+     - MQTT authentication (username, password, certificates) must be configured in application configuration file
      - SSH public keys and update certificates must be exchanged with update server (if update is used)
