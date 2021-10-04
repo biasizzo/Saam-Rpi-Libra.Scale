@@ -33,3 +33,4 @@ Developed within EU Horizon 2020 project SAAM.
   - Insert SD card to Raspberry PI with MatrixIO Creator shield and boot
     On boot the system and applicationss are configured.
 
+  - After boot the system has to be configured

@@ -17,8 +17,8 @@ DEB="$(sed -e "s/\..*$//" -e "/^[7-9]/s/$/.0/" /etc/debian_version)"
 
 groupadd -g 1001 saam
 useradd -c "SAAM user,,Application," -s /bin/bash \
-	-g saam -G adm,sudo,audio,input,i2c,gpio,users \
-	-p "$HASH_SAAM" -m -u 1001 saam
+        -g saam -G adm,sudo,audio,input,i2c,gpio,users \
+        -p "$HASH_SAAM" -m -u 1001 saam
 usermod -p "$HASH_PI" pi
 
 mkdir -p ~pi/.ssh
@@ -99,16 +99,16 @@ apt-get update
 apt-get -y upgrade
 apt-get -y install mc autossh matrixio-malos matrixio-kernel-modules \
         gfortran autoconf automake libtool portaudio19-dev \
-        build-essential python-dev python3-pip avahi-utils \
+        build-essential python-dev python-pip avahi-utils \
         libatlas-base-dev espeak-ng libsndfile1 pulseaudio \
-        symlinks libglib2.0-dev libusb-1.0-0-dev watchdog git
+        symlinks libglib2.0-dev libusb-1.0-0-dev watchdog git cmake
 
 pip3 install -q appdirs backports-abc certifi matrix_io-proto packaging \
                 protobuf pyparsing pyzmq singledispatch six tornado \
                 zerorpc paho-mqtt pyalsaaudio pandas scipy auditok \
-		pynormalize scikit-learn==0.19.2 python_speech_features \
-		watchdog PyAudio setproctitle liac_arff bluepy \
-		func_timeout apscheduler persist-queue
+                pynormalize scikit-learn==0.19.2 python_speech_features \
+                watchdog PyAudio setproctitle liac_arff bluepy \
+                func_timeout apscheduler persist-queue psutil
 
 ##################################################
 ###  MatrixIO shutdown workaround
@@ -131,13 +131,17 @@ chmod a+x /lib/systemd/system-shutdown/matrix.creator.shutdown.sh
 mv /etc/alsa/conf.d/20-bluealsa.conf \
    /etc/alsa/conf.d/._cfg00_20-bluealsa.conf-$orig
 
+LOCAL_USER_SSH=$(eval echo ~$LOCAL_USER/.ssh)
 groupadd -g 3001 ${LOCAL_USER}
 useradd -c "Reverse SSH User,<email>,Local PI user for reverse ssh and update," \
         -g ${LOCAL_USER} -m -s /bin/false -u 3001 ${LOCAL_USER}
-sudo -u ${LOCAL_USER} ssh-keygen -q -t ed25519 -f ~${LOCAL_USER}/.ssh/id_ed25519 -N ''  # no passphrase !!!
-sudo -u ssh -o StrictHostKeyChecking=no \
-            -o PasswordAuthentication=no $SSH_TUNNEL_HOST pwd >/dev/null 2>&1
+sudo -u ${LOCAL_USER} ssh-keygen -q -t ed25519 -f ${LOCAL_USER_SSH}/id_ed25519 -N ''  # no passphrase !!!
+sudo -u ${LOCAL_USER} \
+     ssh -o StrictHostKeyChecking=no -o BatchMode=yes \
+         $SSH_TUNNEL_USER@$SSH_TUNNEL_HOST pwd >/dev/null 2>&1
 #### Public key must be shared to reverse ssh provider !!!
+rsync -a --owner=saam:saam ${LOCAL_USER_SSH}/id_ed25519.pub \
+      ~saam/local_user_id_ed25519.pub
 
 #
 # Configure autossh
@@ -149,6 +153,7 @@ cat << EOF > /etc/default/autossh
 # Options to pass to autossh and/or ssh for tunneling
 SSH_TUNNEL_USER=$SSH_TUNNEL_USER
 SSH_TUNNEL_HOST=$SSH_TUNNEL_HOST
+RPi_user=$LOCAL_USER
 EOF
 
 cat << EOF > /usr/local/sbin/SAAM.reverse.ssh.sh
@@ -228,22 +233,15 @@ EOF
 mkdir -p ~/software
 cd ~/software
 git clone https://github.com/audeering/opensmile
-wget https://github.com/audeering/opensmile/archive/refs/tags/v3.0.0.tar.gz
-#tar  xzf ~/opensmile-2.3.0.tar.gz
-#cd opensmile-2.3.0
-#bash autogen.sh
-#bash autogen.sh
-#./configure
-#make libopensmile.la
-#make
-#make install
-#mkdir -p /usr/local/share/opensmile-2.3.0
-#rsync -av config /usr/local/share/opensmile-2.3.0
-#find /usr/local/share/opensmile-2.3.0/ -type d -exec chmod 755 {} \;
-#find /usr/local/share/opensmile-2.3.0/ -type f -exec chmod a+r {} \;
-#chown -R root:root /usr/local/share/opensmile-2.3.0
-cd
-# rm -rf ~/software
+cd opensmile
+./build.sh
+cmake --install build
+mkdir -p /usr/local/share/opensmile
+rsync -a --owner=root:root config /usr/local/share/opensmile
+find /usr/local/share/opensmile/ -type d -exec chmod 755 {} \;
+find /usr/local/share/opensmile/ -type f -exec chmod a+r {} \;
+cd ~
+rm -rf ~/software
 
 #############################################
 ###  Install SAAM software
@@ -278,9 +276,9 @@ cd $cwd
 
 cat << EOF >> /usr/local/etc/SAAM.update.conf
 
-UPD_HOST=\"$UPDATE_HOST\"
-UPD_USER=\"$UPDATE_USER\"
-RPI_USER=\"$LOCAL_USER\"
+UPD_HOST="$UPDATE_HOST"
+UPD_USER="$UPDATE_USER"
+RPI_USER="$LOCAL_USER"
 EOF
 
 for srvc in ${SYSTEM}/services/system/*.service; do

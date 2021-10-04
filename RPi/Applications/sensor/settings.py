@@ -138,7 +138,7 @@ sensors = dict(
             recog_cfg  = "Speaker_models",    # User recognition configuration folder
             # recog_in   = "normalize",         # User recognition input
             recog_in   = "source",            # User recognition input
-            openSmile_cfg = "/usr/local/share/opensmile-2.3.0/config/gemaps/eGeMAPSv01a.conf",
+            openSmile_cfg = "/usr/local/share/opensmile/config/egemaps/v01a/eGeMAPSv01a.conf",
             # openSmile_in  = "normalize",      # openSmile input
             openSmile_in  = "source",         # openSmile input
         ),
@@ -204,7 +204,6 @@ sensors = dict(
         ),
     ),
 )
-sensors['AUDIO'] = None
 
 report = dict(    #  source_id            period  precision transport
                   #     [0]                 [1]        [2]       [3]
