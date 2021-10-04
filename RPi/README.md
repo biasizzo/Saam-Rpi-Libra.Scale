@@ -33,4 +33,7 @@ Developed within EU Horizon 2020 project SAAM.
   - Insert SD card to Raspberry PI with MatrixIO Creator shield and boot
     On boot the system and applicationss are configured.
 
-  - After boot the system has to be configured
+  - After boot the system has to be configured:
+     - SSH public key of the RPi local user must be transfered to SSH server
+     - MQTT authentication must be set-up (username, password, certificates)
+     - SSH public keys and update certificates must be exchanged with update server (if update is used)
