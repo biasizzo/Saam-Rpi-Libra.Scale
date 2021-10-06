@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /root/setup.cfg
+source /root/setup.env
 
 SSH_TUNNEL_HOST=${SSH_TUNNEL_HOST:-ssh.tunnel.host}
 SSH_TUNNEL_USER=${SSH_TUNNEL_USER:-ruser}
@@ -99,7 +99,7 @@ apt-get update
 apt-get -y upgrade
 apt-get -y install mc autossh matrixio-malos matrixio-kernel-modules \
         gfortran autoconf automake libtool portaudio19-dev \
-        build-essential python-dev python-pip avahi-utils \
+        build-essential python-dev python3-pip avahi-utils \
         libatlas-base-dev espeak-ng libsndfile1 pulseaudio \
         symlinks libglib2.0-dev libusb-1.0-0-dev watchdog git cmake
 
@@ -128,20 +128,24 @@ cat << EOF > /lib/systemd/system-shutdown/matrix.creator.shutdown.sh
 EOF
 chmod a+x /lib/systemd/system-shutdown/matrix.creator.shutdown.sh
 
-mv /etc/alsa/conf.d/20-bluealsa.conf \
-   /etc/alsa/conf.d/._cfg00_20-bluealsa.conf-$orig
+if [ -f "/etc/alsa/conf.d/20-bluealsa.conf" ]; then
+  mv /etc/alsa/conf.d/20-bluealsa.conf \
+     /etc/alsa/conf.d/._cfg00_20-bluealsa.conf-$orig
+fi
 
-LOCAL_USER_SSH=$(eval echo ~$LOCAL_USER/.ssh)
 groupadd -g 3001 ${LOCAL_USER}
 useradd -c "Reverse SSH User,<email>,Local PI user for reverse ssh and update," \
         -g ${LOCAL_USER} -m -s /bin/false -u 3001 ${LOCAL_USER}
-sudo -u ${LOCAL_USER} ssh-keygen -q -t ed25519 -f ${LOCAL_USER_SSH}/id_ed25519 -N ''  # no passphrase !!!
 sudo -u ${LOCAL_USER} \
      ssh -o StrictHostKeyChecking=no -o BatchMode=yes \
          $SSH_TUNNEL_USER@$SSH_TUNNEL_HOST pwd >/dev/null 2>&1
-#### Public key must be shared to reverse ssh provider !!!
-rsync -a --owner=saam:saam ${LOCAL_USER_SSH}/id_ed25519.pub \
-      ~saam/local_user_id_ed25519.pub
+sudo -u ${LOCAL_USER} \
+     ssh -o StrictHostKeyChecking=no -o BatchMode=yes \
+         $UPDATE_USER@$UPDATE_HOST pwd >/dev/null 2>&1
+LOCAL_USER_SSH=$(eval echo "~$LOCAL_USER/.ssh")
+echo "LOCAL_USER_SSH=$LOCAL_USER_SSH"
+# sudo -u ${LOCAL_USER} ssh-keygen -q -t ed25519 -f ${LOCAL_USER_SSH}/id_ed25519 -N ''  # no passphrase !!!
+rsync -a --chown=${LOCAL_USER}:${LOCAL_USER} /root/id_ed25519* ${LOCAL_USER_SSH}
 
 #
 # Configure autossh
@@ -237,7 +241,7 @@ cd opensmile
 ./build.sh
 cmake --install build
 mkdir -p /usr/local/share/opensmile
-rsync -a --owner=root:root config /usr/local/share/opensmile
+rsync -a --chown=root:root config /usr/local/share/opensmile
 find /usr/local/share/opensmile/ -type d -exec chmod 755 {} \;
 find /usr/local/share/opensmile/ -type f -exec chmod a+r {} \;
 cd ~
