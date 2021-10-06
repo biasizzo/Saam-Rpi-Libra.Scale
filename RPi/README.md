@@ -13,8 +13,8 @@ Developed within EU Horizon 2020 project SAAM.
   - Customize settings:
       - edit setup.env (set ssh tunnel host/user, update host/user, ...)
 	  - run ./configure.accounts.sh:
-	      - set RPi account passwords
-		  - set ssh keys from local account
+	      - set passwords of RPi accounts (pi, saam)
+	      - set ssh keys from local account
 	```
 	./configure.accounts.sh
 	```
