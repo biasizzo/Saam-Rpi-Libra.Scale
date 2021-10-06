@@ -41,7 +41,7 @@ Developed within EU Horizon 2020 project SAAM.
     Check if the used raw device (/dev/sde, /dev/mmcblk0) really
     coresponds to the SD card device.
     ```
-    sudo dd bs=4M if=2021-05-07-raspios-buster-armhf-lite.img of=/dev/sde
+    sudo dd bs=4M if=2021-05-07-raspios-buster-armhf-lite.img of=/dev/mmcblk0
     ```
 
   - Copy public ssh keys to ssh tunnel server and update server.\
